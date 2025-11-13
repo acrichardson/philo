@@ -1,0 +1,1201 @@
+0 1 started
+0 1 is eating
+0 3 started
+0 3 is eating
+1 5 started
+1 5 is eating
+1 7 started
+1 7 is eating
+3 11 started
+3 11 is eating
+3 9 started
+3 9 is eating
+3 13 started
+3 13 is eating
+4 15 started
+4 15 is eating
+4 17 started
+4 17 is eating
+4 19 started
+4 19 is eating
+6 21 started
+6 21 is eating
+6 23 started
+6 23 is eating
+6 25 started
+6 25 is eating
+6 27 started
+6 27 is eating
+6 29 started
+6 29 is eating
+6 31 started
+6 31 is eating
+7 33 started
+7 35 started
+7 35 is eating
+7 37 started
+7 37 is eating
+7 39 started
+7 39 is eating
+7 41 started
+7 41 is eating
+7 43 started
+7 43 is eating
+7 45 started
+7 45 is eating
+7 47 started
+7 47 is eating
+8 49 started
+8 49 is eating
+8 51 started
+8 51 is eating
+8 53 started
+8 55 started
+8 55 is eating
+8 57 started
+8 59 started
+8 61 started
+8 53 is eating
+8 59 is eating
+8 61 is eating
+8 57 is eating
+8 63 started
+8 63 is eating
+8 65 started
+9 67 started
+9 65 is eating
+9 67 is eating
+9 69 started
+9 69 is eating
+9 73 started
+9 73 is eating
+9 75 started
+9 71 started
+9 77 started
+9 79 started
+9 71 is eating
+9 75 is eating
+9 81 started
+9 81 is eating
+9 77 is eating
+9 79 is eating
+9 83 started
+10 85 started
+10 87 started
+10 87 is eating
+10 85 is eating
+10 89 started
+10 89 is eating
+10 83 is eating
+10 91 started
+10 93 started
+10 95 started
+10 97 started
+10 93 is eating
+11 99 started
+11 91 is eating
+11 95 is eating
+11 101 started
+11 101 is eating
+11 105 started
+11 103 started
+11 107 started
+11 97 is eating
+11 99 is eating
+11 103 is eating
+11 109 started
+12 109 is eating
+12 105 is eating
+12 111 started
+12 107 is eating
+12 117 started
+12 119 started
+12 115 started
+12 123 started
+12 111 is eating
+12 119 is eating
+12 121 started
+12 113 started
+12 127 started
+12 125 started
+12 129 started
+12 123 is eating
+12 117 is eating
+12 131 started
+12 133 started
+12 121 is eating
+12 131 is eating
+12 125 is eating
+12 115 is eating
+12 127 is eating
+13 135 started
+13 129 is eating
+13 133 is eating
+13 143 started
+13 113 is eating
+13 139 started
+13 135 is eating
+13 147 started
+13 137 started
+13 143 is eating
+13 145 started
+13 141 started
+13 139 is eating
+13 149 started
+13 147 is eating
+13 151 started
+14 137 is eating
+14 153 started
+14 145 is eating
+49 157 started
+49 157 is eating
+49 155 started
+49 141 is eating
+49 159 started
+49 161 started
+49 161 is eating
+49 163 started
+49 163 is eating
+49 167 started
+49 169 started
+49 171 started
+49 173 started
+49 175 started
+50 177 started
+115 179 started
+115 181 started
+115 183 started
+129 185 started
+130 33 is eating
+130 155 is eating
+130 185 is eating
+130 159 is eating
+130 165 started
+130 167 is eating
+130 187 started
+160 189 started
+202 191 started
+222 193 started
+222 115 is sleeping
+222 195 started
+222 197 started
+222 73 is sleeping
+222 131 is sleeping
+222 99 is sleeping
+222 175 is eating
+223 151 is eating
+223 123 is sleeping
+226 171 is eating
+226 153 is eating
+226 109 is sleeping
+226 173 is eating
+226 177 is eating
+226 179 is eating
+226 181 is eating
+226 183 is eating
+226 165 is eating
+226 187 is eating
+226 7 is sleeping
+226 105 is sleeping
+226 111 is sleeping
+226 53 is sleeping
+226 65 is sleeping
+226 121 is sleeping
+227 67 is sleeping
+262 35 is sleeping
+274 95 is sleeping
+274 59 is sleeping
+274 45 is sleeping
+274 23 is sleeping
+275 39 is sleeping
+275 71 is sleeping
+275 85 is sleeping
+275 147 is sleeping
+275 19 is sleeping
+285 1 is sleeping
+297 3 is sleeping
+297 169 is eating
+313 149 is eating
+313 43 is sleeping
+313 119 is sleeping
+313 103 is sleeping
+329 31 is sleeping
+333 57 is sleeping
+337 87 is sleeping
+337 113 is sleeping
+338 15 is sleeping
+338 11 is sleeping
+338 69 is sleeping
+338 9 is sleeping
+338 81 is sleeping
+338 51 is sleeping
+340 21 is sleeping
+340 49 is sleeping
+340 133 is sleeping
+340 137 is sleeping
+340 93 is sleeping
+342 127 is sleeping
+342 61 is sleeping
+342 83 is sleeping
+342 101 is sleeping
+379 29 is sleeping
+379 117 is sleeping
+380 143 is sleeping
+399 129 is sleeping
+400 5 is sleeping
+400 13 is sleeping
+412 55 is sleeping
+458 89 is sleeping
+459 37 is sleeping
+459 191 is eating
+459 189 is eating
+459 193 is eating
+460 27 is sleeping
+460 135 is sleeping
+460 107 is sleeping
+460 47 is sleeping
+494 75 is sleeping
+505 63 is sleeping
+505 199 started
+505 77 is sleeping
+505 17 is sleeping
+513 79 is sleeping
+513 145 is sleeping
+557 97 is sleeping
+557 125 is sleeping
+557 197 is eating
+562 25 is sleeping
+562 139 is sleeping
+562 195 is eating
+562 41 is sleeping
+562 91 is sleeping
+562 141 is sleeping
+562 163 is sleeping
+562 161 is sleeping
+562 157 is sleeping
+562 185 is sleeping
+562 33 is sleeping
+562 167 is sleeping
+562 155 is sleeping
+562 159 is sleeping
+562 153 is sleeping
+562 151 is sleeping
+562 67 is thinking
+562 121 is thinking
+604 171 is sleeping
+604 53 is thinking
+604 187 is sleeping
+604 65 is thinking
+643 131 is thinking
+643 111 is thinking
+643 73 is thinking
+643 99 is thinking
+647 181 is sleeping
+647 109 is thinking
+673 115 is thinking
+673 7 is thinking
+673 165 is sleeping
+673 183 is sleeping
+673 105 is thinking
+673 173 is sleeping
+673 111 is eating
+673 175 is sleeping
+704 123 is thinking
+705 177 is sleeping
+705 179 is sleeping
+721 23 is thinking
+721 59 is thinking
+721 85 is thinking
+721 169 is sleeping
+732 71 is thinking
+732 3 is thinking
+732 35 is thinking
+732 39 is thinking
+754 19 is thinking
+758 1 is thinking
+758 95 is thinking
+772 199 is eating
+772 45 is thinking
+772 9 is thinking
+772 119 is thinking
+772 149 is sleeping
+772 21 is thinking
+772 15 is thinking
+772 31 is thinking
+772 11 is thinking
+772 113 is thinking
+772 137 is thinking
+789 57 is thinking
+789 147 is thinking
+789 49 is thinking
+789 43 is thinking
+789 103 is thinking
+789 81 is thinking
+789 51 is thinking
+789 83 is thinking
+789 87 is thinking
+789 61 is thinking
+789 127 is thinking
+789 101 is thinking
+789 69 is thinking
+789 133 is thinking
+789 93 is thinking
+789 129 is thinking
+789 143 is thinking
+789 13 is thinking
+789 29 is thinking
+789 67 is eating
+789 55 is thinking
+789 121 is eating
+789 5 is thinking
+789 117 is thinking
+789 65 is eating
+789 53 is eating
+789 73 is eating
+789 131 is eating
+789 99 is eating
+789 105 is eating
+789 193 is sleeping
+789 191 is sleeping
+789 135 is thinking
+849 37 is thinking
+849 89 is thinking
+849 109 is eating
+849 115 is eating
+849 7 is eating
+849 75 is thinking
+849 189 is sleeping
+849 27 is thinking
+849 47 is thinking
+849 107 is thinking
+850 77 is thinking
+850 89 is eating
+850 17 is thinking
+850 63 is thinking
+862 79 is thinking
+862 123 is eating
+862 145 is thinking
+862 85 is eating
+862 59 is eating
+862 39 is eating
+862 35 is eating
+862 23 is eating
+862 71 is eating
+862 167 is thinking
+863 153 is thinking
+863 163 is thinking
+863 91 is thinking
+863 125 is thinking
+863 151 is thinking
+863 25 is thinking
+863 197 is sleeping
+863 3 is eating
+863 161 is thinking
+863 141 is thinking
+863 97 is thinking
+863 33 is thinking
+904 195 is sleeping
+904 185 is thinking
+904 157 is thinking
+916 159 is thinking
+916 41 is thinking
+927 139 is thinking
+927 95 is eating
+927 155 is thinking
+928 19 is eating
+928 45 is eating
+928 11 is eating
+928 21 is eating
+928 159 is eating
+928 15 is eating
+928 9 is eating
+928 119 is eating
+928 137 is eating
+928 113 is eating
+928 181 is thinking
+928 187 is thinking
+928 81 is eating
+928 69 is eating
+928 29 is eating
+928 57 is eating
+928 49 is eating
+928 43 is eating
+928 93 is eating
+964 147 is eating
+964 5 is eating
+964 129 is eating
+964 143 is eating
+964 61 is eating
+964 117 is eating
+964 103 is eating
+964 171 is thinking
+964 133 is eating
+996 13 is eating
+996 135 is eating
+996 101 is eating
+1034 83 is eating
+1046 127 is eating
+1046 55 is eating
+1056 87 is eating
+1057 51 is eating
+1057 37 is eating
+1057 75 is eating
+1098 17 is eating
+1098 77 is eating
+1099 63 is eating
+1100 47 is eating
+1100 107 is eating
+1100 27 is eating
+1100 3 is sleeping
+1100 39 is sleeping
+1100 79 is eating
+1100 173 is thinking
+1100 111 is sleeping
+1130 145 is eating
+1130 175 is thinking
+1142 165 is thinking
+1142 163 is eating
+1142 97 is eating
+1160 25 is eating
+1160 183 is thinking
+1160 95 is sleeping
+1191 33 is eating
+1191 151 is eating
+1191 141 is eating
+1209 153 is eating
+1209 185 is eating
+1209 161 is eating
+1209 177 is thinking
+1209 167 is eating
+1212 157 is eating
+1212 91 is eating
+1212 125 is eating
+1212 179 is thinking
+1213 169 is thinking
+1213 41 is eating
+1213 31 is eating
+1213 139 is eating
+1213 121 is sleeping
+1213 105 is sleeping
+1213 53 is sleeping
+1213 155 is eating
+1213 191 is thinking
+1279 171 is eating
+1279 131 is sleeping
+1279 73 is sleeping
+1279 149 is thinking
+1279 65 is sleeping
+1279 181 is eating
+1279 193 is thinking
+1279 99 is sleeping
+1307 67 is sleeping
+1307 187 is eating
+1307 1 is eating
+1307 189 is thinking
+1307 199 is sleeping
+1307 89 is sleeping
+1307 109 is sleeping
+1307 7 is sleeping
+1325 115 is sleeping
+1325 123 is sleeping
+1325 197 is thinking
+1339 85 is sleeping
+1339 23 is sleeping
+1340 35 is sleeping
+1343 71 is sleeping
+1343 195 is thinking
+1343 59 is sleeping
+1343 137 is sleeping
+1343 9 is sleeping
+1343 113 is sleeping
+1382 69 is sleeping
+1383 197 is eating
+1383 97 is sleeping
+1403 21 is sleeping
+1405 11 is sleeping
+1405 43 is sleeping
+1405 175 is eating
+1405 49 is sleeping
+1405 15 is sleeping
+1438 29 is sleeping
+1438 173 is eating
+1438 19 is sleeping
+1463 57 is sleeping
+1463 81 is sleeping
+1463 119 is sleeping
+1479 93 is sleeping
+1479 45 is sleeping
+1479 73 is thinking
+1479 117 is sleeping
+1479 5 is sleeping
+1479 159 is sleeping
+1479 129 is sleeping
+1479 143 is sleeping
+1479 183 is eating
+1479 147 is sleeping
+1479 103 is sleeping
+1479 133 is sleeping
+1479 61 is sleeping
+1515 101 is sleeping
+1515 67 is thinking
+1515 135 is sleeping
+1515 177 is eating
+1515 87 is sleeping
+1515 127 is sleeping
+1572 191 is eating
+1572 51 is sleeping
+1572 75 is sleeping
+1572 35 is thinking
+1572 55 is sleeping
+1573 83 is sleeping
+1573 123 is thinking
+1573 77 is sleeping
+1573 111 is thinking
+1573 63 is sleeping
+1573 27 is sleeping
+1573 3 is thinking
+1573 17 is sleeping
+1573 39 is thinking
+1632 79 is sleeping
+1632 189 is eating
+1632 149 is eating
+1632 193 is eating
+1632 107 is sleeping
+1632 11 is thinking
+1632 163 is sleeping
+1633 25 is sleeping
+1633 145 is sleeping
+1674 179 is eating
+1674 95 is thinking
+1674 195 is eating
+1674 141 is sleeping
+1683 151 is sleeping
+1689 33 is sleeping
+1689 139 is sleeping
+1689 105 is thinking
+1689 155 is sleeping
+1689 125 is sleeping
+1689 161 is sleeping
+1731 91 is sleeping
+1731 41 is sleeping
+1731 185 is sleeping
+1731 121 is thinking
+1731 53 is thinking
+1731 167 is sleeping
+1731 153 is sleeping
+1731 31 is sleeping
+1731 157 is sleeping
+1731 65 is thinking
+1759 171 is sleeping
+1759 181 is sleeping
+1759 131 is thinking
+1760 165 is eating
+1760 99 is thinking
+1760 1 is sleeping
+1794 7 is thinking
+1795 109 is thinking
+1795 187 is sleeping
+1795 89 is thinking
+1795 13 is sleeping
+1795 199 is thinking
+1795 73 is eating
+1795 59 is thinking
+1795 71 is thinking
+1811 37 is sleeping
+1811 115 is thinking
+1832 23 is thinking
+1832 137 is thinking
+1832 113 is thinking
+1832 47 is sleeping
+1832 9 is thinking
+1832 67 is eating
+1878 43 is thinking
+1878 169 is eating
+1885 15 is thinking
+1885 111 is eating
+1885 49 is thinking
+1885 3 is eating
+1885 85 is thinking
+1885 19 is thinking
+1912 81 is thinking
+1912 21 is thinking
+1912 69 is thinking
+1912 29 is thinking
+1912 173 is sleeping
+1912 119 is thinking
+1912 197 is sleeping
+1912 97 is thinking
+1912 123 is eating
+1912 57 is thinking
+1912 175 is sleeping
+1912 183 is sleeping
+1912 117 is thinking
+1912 93 is thinking
+1912 39 is eating
+1912 35 is eating
+1912 159 is thinking
+1912 45 is thinking
+1967 129 is thinking
+1967 133 is thinking
+1967 181 is thinking
+1967 143 is thinking
+1967 5 is thinking
+1967 61 is thinking
+1967 11 is eating
+1967 103 is thinking
+1967 95 is eating
+1967 127 is thinking
+1967 87 is thinking
+1967 105 is eating
+1967 101 is thinking
+1967 135 is thinking
+1967 177 is sleeping
+1967 53 is eating
+1967 75 is thinking
+1967 121 is eating
+1967 17 is thinking
+1968 27 is thinking
+1968 55 is thinking
+1968 191 is sleeping
+1968 131 is eating
+1968 83 is thinking
+1968 63 is thinking
+1968 65 is eating
+1968 77 is thinking
+1968 51 is thinking
+2003 99 is eating
+2003 59 is eating
+2003 109 is eating
+2003 7 is eating
+2003 107 is thinking
+2003 193 is sleeping
+2003 199 is eating
+2035 149 is sleeping
+2035 79 is thinking
+2036 163 is thinking
+2036 71 is eating
+2036 115 is eating
+2036 89 is eating
+2036 25 is thinking
+2036 189 is sleeping
+2036 27 is eating
+2036 137 is eating
+2036 23 is eating
+2036 145 is thinking
+2036 113 is eating
+2071 179 is sleeping
+2071 151 is thinking
+2071 195 is sleeping
+2100 9 is eating
+2100 141 is thinking
+2100 125 is thinking
+2100 155 is thinking
+2100 33 is thinking
+2101 15 is eating
+2101 161 is thinking
+2101 43 is eating
+2101 139 is thinking
+2101 91 is thinking
+2101 19 is eating
+2101 167 is thinking
+2101 1 is thinking
+2101 49 is eating
+2101 153 is thinking
+2101 57 is eating
+2101 157 is thinking
+2101 97 is eating
+2120 41 is thinking
+2120 117 is eating
+2120 29 is eating
+2132 147 is thinking
+2132 31 is thinking
+2132 159 is eating
+2133 119 is eating
+2133 21 is eating
+2164 171 is thinking
+2194 165 is sleeping
+2194 185 is thinking
+2194 69 is eating
+2194 85 is eating
+2194 93 is eating
+2194 45 is eating
+2194 81 is eating
+2194 143 is eating
+2194 2 started
+2194 4 started
+2210 6 started
+2210 8 started
+2231 181 is eating
+2232 129 is eating
+2232 10 started
+2249 17 is eating
+2249 83 is eating
+2249 101 is eating
+2249 127 is eating
+2250 12 started
+2250 14 started
+2250 115 is sleeping
+2250 16 started
+2250 20 started
+2250 22 started
+2250 24 started
+2250 26 started
+2270 28 started
+2270 30 started
+2270 32 started
+2272 34 started
+2272 36 started
+2272 38 started
+2272 40 started
+2272 42 started
+2272 44 started
+2272 46 started
+2272 48 started
+2272 50 started
+2272 52 started
+2295 54 started
+2295 56 started
+2295 58 started
+2295 60 started
+2295 62 started
+2305 64 started
+2305 66 started
+2305 68 started
+2305 70 started
+2305 72 started
+2323 74 started
+2323 117 is sleeping
+2323 78 started
+2323 80 started
+2323 82 started
+2323 84 started
+2323 86 started
+2324 88 started
+2324 90 started
+2324 92 started
+2324 94 started
+2324 96 started
+2324 98 started
+2324 100 started
+2324 102 started
+2324 104 started
+2324 106 started
+2324 108 started
+2324 110 started
+2324 112 started
+2324 114 started
+2348 116 started
+2348 118 started
+2348 120 started
+2348 122 started
+2348 122 is eating
+2348 124 started
+2348 126 started
+2348 128 started
+2349 130 started
+2349 132 started
+2349 134 started
+2349 136 started
+2349 138 started
+2349 140 started
+2349 142 started
+2349 144 started
+2349 146 started
+2349 148 started
+2349 150 started
+2349 152 started
+2349 154 started
+2349 156 started
+2349 158 started
+2349 160 started
+2349 162 started
+2349 164 started
+2349 166 started
+2349 168 started
+2349 170 started
+2349 172 started
+2349 174 started
+2358 176 started
+2358 178 started
+2358 180 started
+2358 182 started
+2358 184 started
+2358 176 is eating
+2358 73 is sleeping
+2358 63 is eating
+2358 47 is thinking
+2358 133 is eating
+2358 5 is eating
+2359 61 is eating
+2376 13 is thinking
+2376 87 is eating
+2376 55 is eating
+2376 103 is eating
+2376 75 is eating
+2376 37 is thinking
+2376 187 is thinking
+2376 186 started
+2376 188 started
+2376 190 started
+2376 192 started
+2376 194 started
+2376 196 started
+2376 198 started
+2376 51 is eating
+2376 77 is eating
+2376 135 is eating
+2378 107 is eating
+2378 169 is sleeping
+2378 145 is eating
+2378 25 is eating
+2378 111 is sleeping
+2378 79 is eating
+2378 3 is sleeping
+2378 151 is eating
+2378 163 is eating
+2378 35 is sleeping
+2410 125 is eating
+2410 91 is eating
+2410 197 is thinking
+2411 175 is thinking
+2411 173 is thinking
+2411 123 is sleeping
+2411 139 is eating
+2411 157 is eating
+2411 161 is eating
+2411 93 is sleeping
+2411 167 is eating
+2411 155 is eating
+2411 153 is eating
+2411 141 is eating
+2411 33 is eating
+2411 183 is thinking
+2440 41 is eating
+2445 131 is sleeping
+2445 177 is thinking
+2445 121 is sleeping
+2445 53 is sleeping
+2445 95 is sleeping
+2445 191 is thinking
+2445 11 is sleeping
+2445 105 is sleeping
+2463 65 is sleeping
+2499 147 is eating
+2499 31 is eating
+2499 171 is eating
+2499 1 is eating
+2499 199 is sleeping
+2519 99 is sleeping
+2591 193 is thinking
+2591 185 is eating
+2591 5 is sleeping
+2610 7 is sleeping
+2610 59 is sleeping
+2622 23 is sleeping
+2622 27 is sleeping
+2623 18 started
+2623 71 is sleeping
+2641 149 is thinking
+2641 89 is sleeping
+2641 102 is eating
+2641 113 is sleeping
+2642 137 is sleeping
+2642 195 is thinking
+2642 12 is eating
+2642 38 is eating
+2642 179 is thinking
+2642 36 is eating
+2642 43 is sleeping
+2642 57 is sleeping
+2642 58 is eating
+2642 9 is sleeping
+2642 10 is eating
+2642 15 is sleeping
+2642 49 is sleeping
+2652 8 is eating
+2661 14 is eating
+2661 97 is sleeping
+2661 48 is eating
+2661 76 started
+2677 19 is sleeping
+2677 66 is eating
+2677 72 is eating
+2677 96 is eating
+2687 98 is eating
+2687 112 is eating
+2687 114 is eating
+2704 119 is sleeping
+2728 159 is sleeping
+2728 120 is eating
+2728 29 is sleeping
+2728 21 is sleeping
+2728 28 is eating
+2728 22 is eating
+2728 116 is eating
+2728 20 is eating
+2728 110 is eating
+2753 118 is eating
+2753 174 is eating
+2753 178 is eating
+2753 67 is sleeping
+2753 198 is eating
+2772 192 is eating
+2772 196 is eating
+2772 190 is eating
+2772 194 is eating
+2803 188 is eating
+2803 39 is sleeping
+2847 45 is sleeping
+2847 165 is thinking
+2847 7 is thinking
+2847 43 is thinking
+2867 143 is sleeping
+2887 44 is eating
+2887 70 is eating
+2887 68 is eating
+2924 94 is eating
+2924 81 is sleeping
+2930 69 is sleeping
+2930 20 is sleeping
+2930 85 is sleeping
+2930 46 is eating
+2930 181 is sleeping
+2955 129 is sleeping
+2955 130 is eating
+2955 17 is sleeping
+2955 16 is eating
+2955 182 is eating
+2955 180 is eating
+2955 100 is eating
+2955 127 is sleeping
+2955 101 is sleeping
+2955 115 is thinking
+2991 128 is eating
+2991 83 is sleeping
+2991 84 is eating
+2991 82 is eating
+2991 151 is sleeping
+2991 55 is sleeping
+2992 150 is eating
+2992 3 is thinking
+2992 86 is eating
+2992 61 is sleeping
+2994 117 is thinking
+2994 60 is eating
+2994 109 is sleeping
+2994 6 is eating
+2994 4 is eating
+2994 79 is sleeping
+2994 133 is sleeping
+2994 132 is eating
+2994 107 is sleeping
+2994 106 is eating
+2994 35 is thinking
+2995 75 is sleeping
+2995 73 is thinking
+2995 176 is sleeping
+2995 111 is thinking
+2995 87 is sleeping
+3010 88 is eating
+3044 122 is sleeping
+3044 80 is eating
+3044 24 is eating
+3044 125 is sleeping
+3060 52 is eating
+3060 144 is eating
+3060 26 is eating
+3060 50 is eating
+3077 169 is thinking
+3077 74 is eating
+3077 164 is eating
+3077 56 is eating
+3085 145 is sleeping
+3085 25 is sleeping
+3085 135 is sleeping
+3085 153 is sleeping
+3085 155 is sleeping
+3120 124 is eating
+3120 126 is eating
+3120 157 is sleeping
+3120 166 is eating
+3120 91 is sleeping
+3120 92 is eating
+3121 90 is eating
+3121 93 is thinking
+3121 160 is eating
+3121 161 is sleeping
+3121 62 is eating
+3121 141 is sleeping
+3121 142 is eating
+3121 64 is eating
+3121 63 is sleeping
+3155 167 is sleeping
+3155 134 is eating
+3155 127 is thinking
+3155 51 is sleeping
+3155 163 is sleeping
+3174 139 is sleeping
+3174 136 is eating
+3174 138 is eating
+3174 156 is eating
+3174 158 is eating
+3175 180 is sleeping
+3175 108 is eating
+3176 33 is sleeping
+3176 168 is eating
+3176 103 is sleeping
+3176 154 is eating
+3176 54 is eating
+3176 77 is sleeping
+3176 78 is eating
+3207 123 is thinking
+3207 18 is eating
+3208 162 is eating
+3208 189 is thinking
+3208 42 is eating
+3208 41 is sleeping
+3222 34 is eating
+3222 104 is eating
+3222 140 is eating
+3222 40 is eating
+3224 105 is thinking
+3224 121 is thinking
+3224 11 is thinking
+3224 95 is thinking
+3224 53 is thinking
+3224 131 is thinking
+3224 65 is thinking
+3224 199 is thinking
+3224 170 is eating
+3224 31 is sleeping
+3225 32 is eating
+3247 171 is sleeping
+3247 148 is eating
+3247 146 is eating
+3249 76 is eating
+3249 30 is eating
+3249 172 is eating
+3249 1 is sleeping
+3249 147 is sleeping
+3249 2 is eating
+3249 99 is thinking
+3297 185 is sleeping
+3297 25 is thinking
+3298 184 is eating
+3298 23 is thinking
+3298 58 is sleeping
+3299 10 is sleeping
+3299 113 is thinking
+3329 9 is thinking
+3329 27 is thinking
+3329 102 is sleeping
+3329 89 is thinking
+3375 38 is sleeping
+3375 37 is eating
+3375 48 is sleeping
+3375 57 is thinking
+3396 8 is sleeping
+3396 14 is sleeping
+3396 97 is thinking
+3396 36 is sleeping
+3396 59 is thinking
+3436 49 is thinking
+3436 71 is thinking
+3449 15 is thinking
+3449 137 is thinking
+3449 12 is sleeping
+3449 186 is eating
+3449 13 is eating
+3449 19 is thinking
+3449 72 is sleeping
+3449 96 is sleeping
+3449 114 is sleeping
+3449 66 is sleeping
+3452 49 is eating
+3452 112 is sleeping
+3481 119 is thinking
+3481 29 is thinking
+3481 116 is sleeping
+3481 21 is thinking
+3485 67 is thinking
+3485 110 is sleeping
+3485 118 is sleeping
+3485 28 is sleeping
+3498 22 is sleeping
+3498 174 is sleeping
+3501 67 is eating
+3501 198 is sleeping
+3501 177 is eating
+3501 159 is thinking
+3501 175 is eating
+3501 120 is sleeping
+3502 191 is eating
+3502 193 is eating
+3502 196 is sleeping
+3505 115 is eating
+3505 192 is sleeping
+3514 190 is sleeping
+3514 195 is eating
+3514 197 is eating
+3535 194 is sleeping
+3535 188 is sleeping
+3535 39 is thinking
+3535 111 is eating
+3535 117 is eating
+3535 45 is thinking
+3538 143 is thinking
+3538 39 is eating
+3538 70 is sleeping
+3566 68 is sleeping
+3566 181 is thinking
+3567 44 is sleeping
+3567 16 is sleeping
+3567 69 is thinking
+3576 129 is thinking
+3579 101 is thinking
+3579 20 is thinking
+3579 85 is thinking
+3579 17 is thinking
+3579 100 is sleeping
+3579 130 is sleeping
+3579 179 is eating
+3579 152 is eating
+3579 182 is sleeping
+3579 46 is sleeping
+3579 94 is sleeping
+3603 81 is thinking
+3668 47 is eating
+3668 150 is sleeping
+3668 60 is sleeping
+3669 7 is eating
+3691 4 is sleeping
+3711 87 is thinking
+3711 75 is thinking
+3711 174 is thinking
+3711 86 is sleeping
+3723 83 is thinking
+3723 107 is thinking
+3723 106 is sleeping
+3723 176 is thinking
+3723 61 is thinking
+3723 84 is sleeping
+3745 82 is sleeping
+3763 133 is thinking
+3763 55 is thinking
+3763 6 is sleeping
+3763 79 is thinking
+3763 128 is sleeping
+3785 132 is sleeping
+3785 109 is thinking
+3785 151 is thinking
+3785 88 is sleeping
+3785 189 is eating
+3785 125 is thinking
+3785 152 is sleeping
+3786 199 is eating
+3803 121 is eating
+3803 164 is sleeping
+3803 24 is sleeping
+3803 153 is thinking
+3803 135 is thinking
+3803 80 is sleeping

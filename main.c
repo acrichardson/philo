@@ -6,7 +6,7 @@
 /*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:23:21 by asrichar          #+#    #+#             */
-/*   Updated: 2025/11/08 12:58:27 by user1234         ###   ########.fr       */
+/*   Updated: 2025/11/13 01:28:02 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,57 +16,38 @@ static int  check_death(t_data *data)
 {
     int     i;
     long    ct;
+    
     i = 0;
     ct = get_time_in_ms();
     while (i < data->num_philos)
     {
-        pthread_mutex_lock(&data->philos[i].meal_mutex); // NEW
-        // dit eruit halen als ik kies om niet start tijd 0 te doen..
-        
-
-        
-        if (
-            // (data->philos[i].meals_eaten < data->iter || data->iter == -10)
-            // && 
-            ct - data->philos[i].last_meal_time > data->time_to_die)
-            
+        pthread_mutex_lock(&data->philos[i].meal_mutex);
+        if (ct - data->philos[i].last_meal_time > data->time_to_die)
         {
             pthread_mutex_lock(&data->mutex);
-            if(data->ended == 1)
+            if (data->ended == 1)
             {
-                pthread_mutex_lock(&data->mutex);
+                pthread_mutex_unlock(&data->mutex);
+                pthread_mutex_unlock(&data->philos[i].meal_mutex);
                 return (1);
             }
-            pthread_mutex_unlock(&data->mutex);
-                //1?
-            safe_print("died in check death", &data->philos[i]);
-            // printf("%ld %i MIAAAAAUWdied\n", ct - data->st, data->philos[i].id);
-            pthread_mutex_unlock(&data->philos[i].meal_mutex); // NEW
-            // pthread_mutex_lock(&data->mutex); // protect write
-            // data->ended = 1;
-            // pthread_mutex_unlock(&data->mutex);
-            pthread_mutex_lock(&data->mutex); // protect write
+            safe_print("died", &data->philos[i]);
             data->ended = 1;
             pthread_mutex_unlock(&data->mutex);
+            pthread_mutex_unlock(&data->philos[i].meal_mutex);
             return (1);
         }
-
-
-        
-        pthread_mutex_unlock(&data->philos[i].meal_mutex); // NEW
+        pthread_mutex_unlock(&data->philos[i].meal_mutex);
         i++;
     }
     return (0);
 }
+
 static int  check_completion(t_data *data)
 {
     int done;
     int i;
-    // where is this returning to? need specific return?
-    // if (data->iter <= 0 && data->iter != -10)
-    //     return (0);
 
-    // printf("ITER = %i\n", data->iter);
     done = 0;
     i = 0;
     
@@ -110,7 +91,7 @@ void    *monitor_routine(void *void_data)
         pthread_mutex_unlock(&data->mutex);
         if (check_death(data) || check_completion(data))
             break ;
-        smart_usleep(1, data);
+        smart_usleep(10, data);
     }
     return (NULL);
 }

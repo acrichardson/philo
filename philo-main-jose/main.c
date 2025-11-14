@@ -3,45 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asrichar <asrichar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:23:21 by asrichar          #+#    #+#             */
-/*   Updated: 2025/11/13 20:49:25 by asrichar         ###   ########.fr       */
+/*   Updated: 2025/11/14 12:49:53 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-static int  check_death(t_data *data)
+static int check_death(t_data *data)
 {
     int     i;
     long    ct;
+    long    last_meal;
+    long    time_since_meal;
     
+    ct = get_time_in_ms();  // Get time ONCE, outside the loop
     i = 0;
+    
     while (i < data->num_philos)
     {
         pthread_mutex_lock(&data->philos[i].meal_mutex);
-        ct = get_time_in_ms();
-        if (ct - data->philos[i].last_meal_time > data->time_to_die)
+        last_meal = data->philos[i].last_meal_time;
+        pthread_mutex_unlock(&data->philos[i].meal_mutex);
+        
+        time_since_meal = ct - last_meal;
+        
+        // Check AFTER releasing the lock - critical for performance
+        if (time_since_meal > data->time_to_die)
         {
             pthread_mutex_lock(&data->mutex);
-            // if (data->ended == 1)
-            // {
-            //     pthread_mutex_unlock(&data->mutex);
-            //     pthread_mutex_unlock(&data->philos[i].meal_mutex);
-            //     return (1);
-            // }
             data->ended = 1;
-            
-            
             pthread_mutex_unlock(&data->mutex);
             
             monitor_print("died", &data->philos[i]);
-            
-            pthread_mutex_unlock(&data->philos[i].meal_mutex);
             return (1);
         }
-        pthread_mutex_unlock(&data->philos[i].meal_mutex);
         i++;
     }
     return (0);
@@ -156,8 +154,8 @@ int main(int argc, char **argv)
     
     int     i;
     i = 0;
-    if (argc < 5)
-        return (1);
+    if (argc < 5 || atoi(argv[1]) < 1)
+        return (0);
         
     if (init_data(&data, argv))
         return (1);

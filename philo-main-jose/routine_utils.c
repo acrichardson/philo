@@ -3,27 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   routine_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asrichar <asrichar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:24:59 by user1234          #+#    #+#             */
-/*   Updated: 2025/11/13 19:04:19 by asrichar         ###   ########.fr       */
+/*   Updated: 2025/11/14 13:16:18 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+// int has_ended(t_philo *philo)
+// {
+//     pthread_mutex_lock(&philo->data_ptr->mutex);
+//     if (philo->data_ptr->ended)
+//     {
+//         pthread_mutex_unlock(&philo->data_ptr->mutex);
+//         return (1);
+//     }
+//     pthread_mutex_unlock(&philo->data_ptr->mutex);
+//     return (0);
+// }
+
 int has_ended(t_philo *philo)
 {
+    int result;
     pthread_mutex_lock(&philo->data_ptr->mutex);
-    if (philo->data_ptr->ended)
-    {
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        return (1);
-    }
+    result = philo->data_ptr->ended;
     pthread_mutex_unlock(&philo->data_ptr->mutex);
-    return (0);
+    return (result);
 }
-
 
 void    lock_left_right(t_philo *philo)
 {
@@ -89,7 +97,8 @@ int philo_eat_sleep_think(t_philo *philo)
     pthread_mutex_unlock(&philo->meal_mutex);
     
     safe_print("is eating", philo);
-    smart_usleep(philo->data_ptr->time_to_eat, philo->data_ptr);
+    // smart_usleep(philo->data_ptr->time_to_eat, philo->data_ptr);
+    smart_usleep(philo->data_ptr->time_to_eat);
 
     // NEW KIJK ERNAAR
     pthread_mutex_lock(&philo->meal_mutex);
@@ -108,7 +117,8 @@ int philo_eat_sleep_think(t_philo *philo)
     pthread_mutex_unlock(&philo->data_ptr->mutex);
 
     safe_print("is sleeping", philo);
-    smart_usleep(philo->data_ptr->time_to_sleep, philo->data_ptr);
+    // smart_usleep(philo->data_ptr->time_to_sleep, philo->data_ptr);
+    smart_usleep(philo->data_ptr->time_to_sleep);
 
     pthread_mutex_lock(&philo->data_ptr->mutex);
     if (philo->data_ptr->ended)
@@ -175,9 +185,15 @@ void    *philo_routine(void *Phill)
     // if (philo->id > 1)
     //     usleep(philo->id * 100);  // Later philosophers wait longer
         
-    // BETTER STAGGERING - ODD PHILOS WAIT LONGER
+    // // BETTER STAGGERING - ODD PHILOS WAIT LONGER
+    // if (philo->id % 2 == 0)
+    //     usleep(philo->data_ptr->time_to_die * 500);  // Even philosophers wait 1ms
+
+    // if (philo->id % 2 == 0)
+    //     usleep(500);
     if (philo->id % 2 == 0)
-        usleep(philo->data_ptr->time_to_die * 500);  // Even philosophers wait 1ms
+        usleep(philo->id * 100);
+    
     // else if (philo->id == philo->data_ptr->num_philos)  // Last philosopher waits longer
     //     usleep(100);
     

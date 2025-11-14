@@ -50,5 +50,6 @@ void    lock_left_right(t_philo *philo);
 void    lock_right_left(t_philo *philo);
 int     philo_eat_sleep_think(t_philo *philo);
 void    *actual_routine(t_philo *philo);
-void    smart_usleep(long duration_ms, t_data *data);
+// void    smart_usleep(long duration_ms, t_data *data);
+void    smart_usleep(long duration_ms);
 #endif

@@ -1,3 +1,9 @@
+./philo 200 800 200 200
+they die at 801 at times
+again?????????
+
+
+
 ./philo 5 300 200 200 3
 works fine
 

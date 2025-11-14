@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asrichar <asrichar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:08:52 by user1234          #+#    #+#             */
-/*   Updated: 2025/11/13 19:24:51 by asrichar         ###   ########.fr       */
+/*   Updated: 2025/11/14 12:35:22 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,23 @@ void safe_print(char *msg, t_philo *philo)
     pthread_mutex_unlock(&philo->data_ptr->mutex);
     pthread_mutex_unlock(&philo->data_ptr->print_mutex);
 }
+
+// //DIDNT WORK
+// void safe_print(char *msg, t_philo *philo)
+// {
+//     pthread_mutex_lock(&philo->data_ptr->print_mutex);
+    
+//     // Quick read without extra lock - ended rarely changes
+//     if (!philo->data_ptr->ended)
+//     {
+//         printf("%ld %d %s\n", 
+//             get_time_in_ms() - philo->data_ptr->st, 
+//             philo->id, msg);
+//     }
+    
+//     pthread_mutex_unlock(&philo->data_ptr->print_mutex);
+// }
+
 
 void monitor_print(char *msg, t_philo *philo)
 {
@@ -108,22 +125,45 @@ void    write_data_philos(t_data *data)
     pthread_mutex_unlock(&data->start_mutex);
 }
 
-void    smart_usleep(long duration_ms, t_data *data)
+// void    smart_usleep(long duration_ms, t_data *data)
+// {
+//     long    start;
+//     start = get_time_in_ms();
+//     while (1)
+//     {
+//         pthread_mutex_lock(&data->mutex);
+//         if (data->ended)
+//         {
+//             pthread_mutex_unlock(&data->mutex);
+//             break ;
+//         }
+//         pthread_mutex_unlock(&data->mutex);
+//         // misschien while loopje van maken
+//         if (get_time_in_ms() - start >= duration_ms)
+//             break ;
+//         usleep(100);
+//     }
+// }
+
+void smart_usleep(long duration_ms)
 {
-    long    start;
-    start = get_time_in_ms();
+    long start = get_time_in_ms();
+    long elapsed;
+    
+    
+    
     while (1)
     {
-        pthread_mutex_lock(&data->mutex);
-        if (data->ended)
-        {
-            pthread_mutex_unlock(&data->mutex);
-            break ;
-        }
-        pthread_mutex_unlock(&data->mutex);
-        // misschien while loopje van maken
-        if (get_time_in_ms() - start >= duration_ms)
-            break ;
-        usleep(100);
+        elapsed = get_time_in_ms() - start;
+        if (elapsed >= duration_ms)
+            break;
+        
+        long remaining = duration_ms - elapsed;
+        if (remaining > 1)
+            usleep(1000);  // 1ms
+        else
+            usleep(remaining * 1000);
     }
 }
+
+

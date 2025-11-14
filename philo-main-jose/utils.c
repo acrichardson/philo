@@ -6,7 +6,7 @@
 /*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:08:52 by user1234          #+#    #+#             */
-/*   Updated: 2025/11/14 12:35:22 by user1234         ###   ########.fr       */
+/*   Updated: 2025/11/14 13:56:03 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,26 +125,7 @@ void    write_data_philos(t_data *data)
     pthread_mutex_unlock(&data->start_mutex);
 }
 
-// void    smart_usleep(long duration_ms, t_data *data)
-// {
-//     long    start;
-//     start = get_time_in_ms();
-//     while (1)
-//     {
-//         pthread_mutex_lock(&data->mutex);
-//         if (data->ended)
-//         {
-//             pthread_mutex_unlock(&data->mutex);
-//             break ;
-//         }
-//         pthread_mutex_unlock(&data->mutex);
-//         // misschien while loopje van maken
-//         if (get_time_in_ms() - start >= duration_ms)
-//             break ;
-//         usleep(100);
-//     }
-// }
-
+// it was the locks and the ended checks in smart_usleep
 void smart_usleep(long duration_ms)
 {
     long start = get_time_in_ms();

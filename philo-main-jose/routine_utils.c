@@ -6,161 +6,96 @@
 /*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:24:59 by user1234          #+#    #+#             */
-/*   Updated: 2025/11/14 13:58:36 by user1234         ###   ########.fr       */
+/*   Updated: 2025/11/15 14:52:53 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int has_ended(t_philo *philo)
+int	has_ended(t_philo *philo)
 {
-    int result;
-    pthread_mutex_lock(&philo->data_ptr->mutex);
-    result = philo->data_ptr->ended;
-    pthread_mutex_unlock(&philo->data_ptr->mutex);
-    return (result);
+	int	result;
+
+	pthread_mutex_lock(&philo->data_ptr->mutex);
+	result = philo->data_ptr->ended;
+	pthread_mutex_unlock(&philo->data_ptr->mutex);
+	return (result);
 }
 
-void    lock_left_right(t_philo *philo)
+void	lock_left_right(t_philo *philo)
 {
-    pthread_mutex_lock(philo->left_fork);
-    
-    if (has_ended(philo) == 1)
-    {
-        pthread_mutex_unlock(philo->left_fork);
-        return ;
-    }
-    
-    pthread_mutex_lock(philo->right_fork);
-    
-    if (has_ended(philo) == 1)
-    {
-        pthread_mutex_unlock(philo->right_fork);
-        pthread_mutex_unlock(philo->left_fork);
-        return ;
-    }
+	pthread_mutex_lock(philo->left_fork);
+	if (has_ended(philo) == 1)
+	{
+		pthread_mutex_unlock(philo->left_fork);
+		return ;
+	}
+	pthread_mutex_lock(philo->right_fork);
+	if (has_ended(philo) == 1)
+	{
+		pthread_mutex_unlock(philo->right_fork);
+		pthread_mutex_unlock(philo->left_fork);
+		return ;
+	}
 }
 
-void    lock_right_left(t_philo *philo)
+void	lock_right_left(t_philo *philo)
 {
-    pthread_mutex_lock(philo->right_fork);
-    
-    pthread_mutex_lock(&philo->data_ptr->mutex);
-    if (philo->data_ptr->ended)
-    {
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        pthread_mutex_unlock(philo->right_fork);
-        return ;
-    }
-    pthread_mutex_unlock(&philo->data_ptr->mutex);
-    
-    pthread_mutex_lock(philo->left_fork);
-    
-    pthread_mutex_lock(&philo->data_ptr->mutex);
-    if (philo->data_ptr->ended)
-    {
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        pthread_mutex_unlock(philo->left_fork);
-        pthread_mutex_unlock(philo->right_fork);
-        return ;
-    }
-    pthread_mutex_unlock(&philo->data_ptr->mutex);
+	pthread_mutex_lock(philo->right_fork);
+	pthread_mutex_lock(&philo->data_ptr->mutex);
+	if (philo->data_ptr->ended)
+	{
+		pthread_mutex_unlock(&philo->data_ptr->mutex);
+		pthread_mutex_unlock(philo->right_fork);
+		return ;
+	}
+	pthread_mutex_unlock(&philo->data_ptr->mutex);
+	pthread_mutex_lock(philo->left_fork);
+	pthread_mutex_lock(&philo->data_ptr->mutex);
+	if (philo->data_ptr->ended)
+	{
+		pthread_mutex_unlock(&philo->data_ptr->mutex);
+		pthread_mutex_unlock(philo->left_fork);
+		pthread_mutex_unlock(philo->right_fork);
+		return ;
+	}
+	pthread_mutex_unlock(&philo->data_ptr->mutex);
 }
 
-int philo_eat_sleep_think(t_philo *philo)
+int	check_ended(t_philo philo)
 {
-    pthread_mutex_lock(&philo->data_ptr->mutex);
-    if (philo->data_ptr->ended)
-    {
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        return (1);
-    }
-    pthread_mutex_unlock(&philo->data_ptr->mutex);
-
-    pthread_mutex_lock(&philo->meal_mutex);
-    philo->last_meal_time = get_time_in_ms();
-    pthread_mutex_unlock(&philo->meal_mutex);
-    
-    safe_print("is eating", philo);
-    smart_usleep(philo->data_ptr->time_to_eat);
-
-    pthread_mutex_lock(&philo->meal_mutex);
-    philo->meals_eaten++;
-    pthread_mutex_unlock(&philo->meal_mutex);
-
-    pthread_mutex_unlock(philo->right_fork);
-    pthread_mutex_unlock(philo->left_fork);
-
-    pthread_mutex_lock(&philo->data_ptr->mutex);
-    if (philo->data_ptr->ended)
-    {
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        return (1);
-    }
-    pthread_mutex_unlock(&philo->data_ptr->mutex);
-
-    safe_print("is sleeping", philo);
-    smart_usleep(philo->data_ptr->time_to_sleep);
-
-    pthread_mutex_lock(&philo->data_ptr->mutex);
-    if (philo->data_ptr->ended)
-    {
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        return (1);
-    }
-    pthread_mutex_unlock(&philo->data_ptr->mutex);
-
-    safe_print("is thinking", philo);
-    
-    if ((philo->data_ptr->num_philos % 2) == 1)
-    {
-        usleep(1000);
-    }
-    
-    return (0);
+	pthread_mutex_lock(&philo.data_ptr->mutex);
+	if (philo.data_ptr->ended)
+	{
+		pthread_mutex_unlock(&philo.data_ptr->mutex);
+		return (1);
+	}
+	pthread_mutex_unlock(&philo.data_ptr->mutex);
+	return (0);
 }
 
-void    *actual_routine(t_philo *philo)
+void	safe_print(char *msg, t_philo *philo)
 {
-    while (1)
-    {
-        pthread_mutex_lock(&philo->data_ptr->mutex);
-        if (philo->data_ptr->ended)
-        {
-            pthread_mutex_unlock(&philo->data_ptr->mutex);
-            break ;
-        }
-        pthread_mutex_unlock(&philo->data_ptr->mutex);
-        
-        if (philo->id % 2 == 0)
-            lock_left_right(philo);
-        else
-            lock_right_left(philo);
-            
-        if (philo_eat_sleep_think(philo))
-            break ;
-    }
-    return (NULL);
+	pthread_mutex_lock(&philo->data_ptr->print_mutex);
+	pthread_mutex_lock(&philo->data_ptr->mutex);
+	if (!philo->data_ptr->ended)
+	{
+		printf("%ld %d %s\n", get_time_in_ms()
+			- philo->data_ptr->st, philo->id, msg);
+	}
+	pthread_mutex_unlock(&philo->data_ptr->mutex);
+	pthread_mutex_unlock(&philo->data_ptr->print_mutex);
 }
 
-void    *philo_routine(void *Phill)
-{
-    t_philo *philo = (t_philo *)Phill;
-    
-    pthread_mutex_lock(&philo->data_ptr->start_mutex);
-    pthread_mutex_unlock(&philo->data_ptr->start_mutex);
-    // safe_print("started", philo);
-    // MOVE THIS SOMEWHERE ELSE PLS
-    if (philo->data_ptr->num_philos == 1)
-    {
-        pthread_mutex_lock(philo->left_fork);
-        safe_print("took the left fork", philo);
-        usleep(philo->data_ptr->time_to_die * 1000);
-        safe_print("died", philo);
-        pthread_mutex_unlock(philo->left_fork);
-        return (NULL);
-    }
-    actual_routine(philo);
-    return (NULL);
-}
+// void	join_philos(t_data data)
+// {
+// 	int	i;
 
+// 	i = 0;
+// 	while (i < data.num_philos)
+// 	{
+// 		pthread_join(data.philos[i].thread, NULL);
+// 		i++;
+// 	}
+// 	return ;
+// }

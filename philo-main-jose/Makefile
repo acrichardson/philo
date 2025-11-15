@@ -1,8 +1,12 @@
 NAME = philo
 
 SRCS =	main.c\
+		init.c\
 		utils.c\
-		routine_utils.c
+		routine_utils.c\
+		routine.c\
+		utils_init.c\
+		utils_data_check.c\
 
 OBJS = $(SRCS:.c=.o)
 

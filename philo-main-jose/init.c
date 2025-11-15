@@ -6,18 +6,11 @@
 /*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 14:44:43 by user1234          #+#    #+#             */
-/*   Updated: 2025/11/15 14:54:10 by user1234         ###   ########.fr       */
+/*   Updated: 2025/11/15 14:56:16 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
-
-// int	malloc_check(pthread_t thread)
-// {
-// 	if (!thread)
-// 		return (1);
-// 	return (0);
-// }
 
 void	join_philos(t_data data)
 {

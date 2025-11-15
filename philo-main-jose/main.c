@@ -6,7 +6,7 @@
 /*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:23:21 by asrichar          #+#    #+#             */
-/*   Updated: 2025/11/15 14:23:03 by user1234         ###   ########.fr       */
+/*   Updated: 2025/11/15 14:56:36 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,43 +85,6 @@ void	*monitor_routine(void *void_data)
 	return (NULL);
 }
 
-// int	is_digit(char c)
-// {
-// 	return (c >= '0' && c <= '9');
-// }
-
-// int	is_positive_number(char *str)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	if (!str || !str[0])
-// 		return (0);
-// 	while (str[i])
-// 	{
-// 		if (!is_digit(str[i]))
-// 			return (0);
-// 		i++;
-// 	}
-// 	return (1);
-// }
-
-// int	check_args(int argc, char **argv)
-// {
-// 	int	i;
-
-// 	if (argc < 5 || argc > 6)
-// 		return (0);
-// 	i = 1;
-// 	while (i < argc)
-// 	{
-// 		if (!is_positive_number(argv[i]))
-// 			return (0);
-// 		i++;
-// 	}
-// 	return (1);
-// }
-
 void	join_free(pthread_t thread, t_data data)
 {
 	pthread_join(thread, NULL);
@@ -129,25 +92,6 @@ void	join_free(pthread_t thread, t_data data)
 	free(data.forks);
 	return ;
 }
-
-// void	error_arguments(void)
-// {
-// 	write(2, "Error: invalid arguments\n", 25);
-// 	return ;
-// }
-
-// void	join_philos(t_data data)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (i < data.num_philos)
-// 	{
-// 		pthread_join(data.philos[i].thread, NULL);
-// 		i++;
-// 	}
-// 	return ;
-// }
 
 int	main(int argc, char **argv)
 {

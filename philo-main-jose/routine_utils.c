@@ -6,7 +6,7 @@
 /*   By: user1234 <user1234@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/29 12:24:59 by user1234          #+#    #+#             */
-/*   Updated: 2025/11/15 14:52:53 by user1234         ###   ########.fr       */
+/*   Updated: 2025/11/15 14:56:54 by user1234         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,16 +86,3 @@ void	safe_print(char *msg, t_philo *philo)
 	pthread_mutex_unlock(&philo->data_ptr->mutex);
 	pthread_mutex_unlock(&philo->data_ptr->print_mutex);
 }
-
-// void	join_philos(t_data data)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while (i < data.num_philos)
-// 	{
-// 		pthread_join(data.philos[i].thread, NULL);
-// 		i++;
-// 	}
-// 	return ;
-// }
